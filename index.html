@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masonry Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>CURTIS TERRY</h1>
+        <p>CONTENT CREATOR</p>
+    </header>
+    <section class="portfolio">
+        <div class="item" onclick="openLightbox('img/ill1.jpg')">
+            <img src="img/ill1.jpg">
+            <div class="caption">Illustration</div>
+        </div>
+        <div class="item" onclick="openLightbox('img/ill2.jpg')">
+            <img src="img/ill2.jpg">
+            <div class="caption">Illustration</div>
+        </div>
+        <div class="item" onclick="openLightbox('img/mg1.gif')">
+            <img src="img/mg1.gif">
+            <div class="caption">Motion Graphic showcase for a client's Steam profile</div>
+        </div>
+        <div class="item">
+            <img src="img/ps1.gif" onclick="openLightbox('img/ps1.gif')">
+            <div class="caption">[Particle System] Steam Workshop Submission (Accepted for use in Team Fortress 2)</div>
+        </div>
+        <div class="item" onclick="openLightbox('img/gd1.png')">
+            <img src="img/gd1.png">
+            <div class="caption">Logos for a hockey brand</div>
+        </div>
+        <div class="item" onclick="openLightbox('img/comm2.gif')">
+            <img src="img/comm2.gif">
+            <div class="caption">SFM animation showcase for a client's Steam profile</div>
+        </div>
+        <div class="item" onclick="openLightbox('img/gd2.png')">
+            <img src="img/gd2.png">
+            <div class="caption">Logo design for a hockey camp</div>
+        </div>
+        <div class="item">
+            <img src="img/gd3.jpg" onclick="openLightbox('img/gd3.jpg')">
+            <div class="caption">Trifold brochure boilerplate for B2B purposes</div>
+        </div>
+        <div class="item">
+            <img src="img/ill3.jpg" onclick="openLightbox('img/ill3.jpg')">
+            <div class="caption">Illustration</div>
+        </div>
+        <div class="item">
+            <img src="img/sp1.png" onclick="openLightbox('img/sp1.png')">
+            <div class="caption">Apothic Wine rebranded for the 70s as part of a school project</div>
+        </div>
+        <div class="item">
+            <video autoplay muted loop>
+                <source src="video/ps1.mp4" type="video/mp4">
+            </video>
+            <div class="caption">Personal project demonstrating level design and particle system creation</div>
+        </div>
+        <div class="item" onclick="openLightbox('img/he1.jpg')"> 
+            <img src="img/he1.jpg">
+            <div class="caption">Custom level made in Hammer Editor 1/7</div>
+        </div>
+        <div class="item" onclick="openLightbox('img/he2.jpg')"> 
+            <img src="img/he2.jpg">
+            <div class="caption">Custom level made in Hammer Editor 2/7</div>
+        </div>
+        <div class="item" onclick="openLightbox('img/he3.jpg')"> 
+            <img src="img/he3.jpg">
+            <div class="caption">Custom level made in Hammer Editor 3/7</div>
+        </div>
+        <div class="item" onclick="openLightbox('img/he4.jpg')"> 
+            <img src="img/he4.jpg">
+            <div class="caption">Custom level made in Hammer Editor 4/7</div>
+        </div>
+        <div class="item" onclick="openLightbox('img/he5.jpg')"> 
+            <img src="img/he5.jpg">
+            <div class="caption">Custom level made in Hammer Editor 5/7</div>
+        </div>
+        <div class="item" onclick="openLightbox('img/he6.jpg')"> 
+            <img src="img/he6.jpg">
+            <div class="caption">Custom level made in Hammer Editor 6/7</div>
+        </div>
+        <div class="item" onclick="openLightbox('img/he7.jpg')"> 
+            <img src="img/he7.jpg">
+            <div class="caption">Custom level made in Hammer Editor 7/7</div>
+        </div>
+        <div class="item" onclick="openLightbox('img/ps2.gif')">
+            <img src="img/ps2.gif">
+            <div class="caption">[Particle System] Steam Workshop submission for Team Fortress 2</div>
+        </div>
+        <div class="item" onclick="openLightbox('img/ps3.gif')">
+            <img src="img/ps3.gif">
+            <div class="caption">[Particle System] Steam Workshop submission for Team Fortress 2</div>
+        </div>
+        <div class="item" onclick="openLightbox('img/ps4.gif')">
+            <img src="img/ps4.gif">
+            <div class="caption">[Particle System] Steam Workshop submission for Team Fortress 2</div>
+        </div>
+        <div class="item" onclick="openLightbox('img/comm1.jpg')">
+            <img src="img/comm1.jpg">
+            <div class="caption">Steam profile avatar commission</div>
+        </div>
+        <div class="item" onclick="openLightbox('img/ill4.jpg')">
+            <img src="img/ill4.jpg">
+            <div class="caption">Painting for First Nations Art Raffle</div>
+        </div>
+    </section>
+    <div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img class="lightbox-img" id="lightboxImage">
+</div>
+    <section>
+        <h2>SKILLS</h2>
+        <div class="skill-container">
+            <div class="skill-card">
+                <h3>General Skillset</h3>
+                <ul>
+                    <li>Graphic Design</li>
+                    <li>Illustration</li>
+                    <li>Motion Graphics</li>
+                    <li>Video Editing</li>
+                    <li>3D Modelling</li>
+                    <li>Level Design</li>
+                    <li>Basic Front-End Web Development</li>
+                </ul>                
+            </div>
+            <div class="skill-card">
+                <h3>Adobe</h3>
+              <ul>
+                <li>Photoshop</li>
+                <li>Illustrator</li>
+                <li>Premiere</li>
+                <li>Lightroom</li>
+              </ul>  
+            </div>
+            <div class="skill-card">
+                <h3>Source Engine</h3>
+              <ul>
+                 <li>Source Filmmaker (SFM)</li>
+                 <li>Particle System Creation</li>
+                 <li>Hammer Editor (Level Creator)</li>
+                 <li>Scripting</li>
+
+              </ul>  
+            </div>
+            <div class="skill-card">
+                <h3>Other Software</h3>
+                <ul>
+                    <li>Blender</li>
+                    <li>Sony Vegas</li>
+                    <li>Figma</li>
+                    <li>Sublime Text</li>
+                    <li>OBS Studio</li>
+                    <li>FL Studio</li>
+                </ul>  
+            </div>
+        </div>
+    </section>
+    <script>
+function openLightbox(imgSrc) {
+    // Show the lightbox
+    document.getElementById('lightbox').style.display = 'flex';
+    
+    // Set the image and caption in the lightbox
+    document.getElementById('lightboxImage').src = imgSrc;
+}
+
+function closeLightbox() {
+    // Hide the lightbox
+    document.getElementById('lightbox').style.display = 'none';
+}
+</script>
+
+</body>
+</html>
